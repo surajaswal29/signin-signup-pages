@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-row flex-box">
+      <div class="main-nav flex-box">
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="end-col flex-box">
+        <button type="button" class="btn" id="login">Login</button>
+        <button type="button" class="btn" id="register">Register</button>
+      </div>
+    </div>
+    <!-- login form -->
+    <div class="main-wrap hidden" id="login-modal-box">
+      <button class="modal-close-btn" id="cross-btn">&times;</button>
+      <div class="form-heading">
+        <h1>Login to surajaswal.dev</h1>
+      </div>
+      <div class="form-box flex-box perfect-center">
+        <form action="" method="post" autocomplete="off">
+          <label for="username">Username</label><br />
+          <input type="text" name="uname" id="username" /><br />
+          <label for="password">Password</label><br />
+          <input type="text" name="pass" id="password" /><br />
+          <button type="submit">Login</button>
+          <span class="fg-pass"><a href="#">Forgot Password?</a></span>
+        </form>
+      </div>
+      <!-- error container -->
+      <div class="error-box" id="error-box">
+        Error: Username or password doesn't match!
+      </div>
+    </div>
+
+    <!-- register form -->
+    <div class="main-wrap form-b-1 hidden" id="register-modal-box">
+      <button class="modal-close-btn" id="cross-btn">&times;</button>
+      <div class="form-heading">
+        <h1>Welcome to surajaswal.dev</h1>
+      </div>
+      <div class="form-box flex-box perfect-center">
+        <form action="" method="post" autocomplete="off">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="uname"
+            id="username"
+            class="mb-bottom"
+            required
+          /><br />
+          <label for="password">Create Password</label><br />
+          <div class="password-box mb-bottom">
+            <input
+              type="password"
+              name="pass"
+              id="create-password"
+              required
+            /><br />
+            <i class="far fa-eye" id="password-visi" title="Show Password"></i>
+          </div>
+          <span class="pass-instruction mb-bottom">
+            Password must be greater than or equal to 8 and must contain special
+            characters, an upper case, a lower case and 0-9 number. </span
+          ><br />
+          <label for="password">Confirm Password</label><br />
+          <input
+            type="text"
+            name="cpass"
+            id="confirm-password"
+            class="mb-bottom"
+            required
+          /><br />
+          <button type="submit" id="register-submit">Register</button>
+        </form>
+      </div>
+      <!-- error container -->
+      <div class="error-box" id="error-box-1">
+        <!-- Error: Username or password doesn't match! -->
+      </div>
+      <!-- <div class="login-with">
+        <a href="#">F</a>
+        <a href="#">G</a>
+        <a href="#">G</a>
+        <a href="#">L</a>
+      </div> -->
+    </div>
+    <div class="overlay hidden" id="overlay"></div>
+  </body>
+</html>

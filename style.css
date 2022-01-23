@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+  transition: all 0.2s;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  /* z-index: 5;   */
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.main-row {
+  max-width: 100%;
+  height: auto;
+  padding: 15px;
+  border-bottom: 1px solid #c9bfbf;
+}
+.flex-box {
+  display: flex;
+}
+.perfect-center {
+  justify-content: center;
+  align-items: center;
+}
+.main-nav,
+.end-col {
+  align-items: center;
+}
+.main-nav {
+  width: 30%;
+  justify-content: space-between;
+}
+.main-nav a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px 6px;
+}
+.end-col {
+  justify-content: end;
+  width: 70%;
+}
+.btn,
+.modal-close-btn {
+  padding: 10px 18px;
+  margin: 2px 10px;
+  background-color: #8e3bdb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #702ead;
+}
+.hidden {
+  display: none;
+}
+.main-wrap {
+  height: 360px;
+  width: 400px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.modal-close-btn {
+  position: inherit;
+  top: 5px;
+  right: 5px;
+  padding: 1px 4px;
+  margin: 0;
+}
+.form-heading {
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.form-box {
+  padding: 15px;
+  height: auto;
+  /* width: fit-content; */
+}
+.form-b-1 {
+  height: 450px;
+}
+.mb-bottom {
+  margin-bottom: 0.6rem;
+}
+.form-box input {
+  width: 260px;
+  height: 33px;
+  margin-top: 0.22rem;
+  border: 1px solid #a5a1a1;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 15px;
+  color: #1a1919;
+}
+.form-box input:focus {
+  border-color: #afaeae;
+  outline: none;
+}
+.form-box button {
+  padding: 8px 15px;
+  background-color: #8e3bdb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 0.4rem;
+}
+.form-box .fg-pass {
+  display: inline-block;
+  transform: translate(4rem, 0rem);
+  font-size: 14px;
+}
+.form-box .fg-pass a {
+  text-decoration: none;
+  color: #014166;
+  padding: 0.3rem;
+  border-radius: 2px;
+}
+.form-box span a:hover {
+  border: 1px solid #035381;
+}
+.password-box {
+  position: relative;
+}
+.password-box i {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.4rem;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3d3d3d;
+  z-index: 5;
+}
+.pass-instruction {
+  color: #058520;
+  font-size: 12px;
+  width: 260px;
+  display: inline-block;
+  text-align: justify;
+  /* margin: 5px 0px; */
+}
+.error-box {
+  font-size: 13px;
+  color: red;
+  font-style: italic;
+  text-align: center;
+  padding: 0.8rem 0rem;
+}
