@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in and Sign-up</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="form-wrap">
+      <div class="container shadow">
+        <div class="row">
+          <div class="col-md-6 p-0 m-0">
+            <button class="btn-block active" id="btn-1">Sign in</button>
+          </div>
+          <div class="col-md-6 m-0 p-0">
+            <button class="btn-block" id="btn-2">Sign up</button>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center" id="signin">
+          <div class="col-md-12">
+            <form action="" class="form p-5">
+              <div class="row mt-3">
+                <div class="col-12">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <label for="password">Password</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-1">
+                  <input type="checkbox" name="remember" id="remember" />
+                </div>
+                <div class="col-11">
+                  <label for="password">Remember me</label>
+                </div>
+              </div>
+              <input
+                type="submit"
+                value="Sign in"
+                class="btn-block rounded mt-5 bt-login"
+              />
+            </form>
+          </div>
+        </div>
+        <div
+          class="row justify-content-center align-items-center display-none"
+          id="signup"
+        >
+          <div class="col-md-12">
+            <form action="" class="form p-5">
+              <div class="row mt-3">
+                <div class="col-6">
+                  <label for="username">Firstname*</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-6">
+                  <label for="username">Lastname*</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-3">
+                  <label for="password">Email*</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" />
+                </div>
+                <!-- <input type="text" class="form-control"> -->
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-3">
+                  <label for="password">Password*</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-1">
+                  <input type="checkbox" name="remember" id="remember" />
+                </div>
+                <div class="col-11">
+                  <label for="password">Remember me</label>
+                </div>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                class="btn-block rounded mt-5 bt-login"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="row bg-dark text-light p-2 text-center">
+        <div class="col-12">
+          <span class="font-small"> &copy;Created by suraj aswal </span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn-2").click(function () {
+          $("#btn-2").addClass("active");
+          $("#btn-1").removeClass("active");
+          $("#signin").toggleClass("display-none");
+          $("#signup").removeClass("display-none");
+        });
+        $("#btn-1").click(function () {
+          $("#btn-1").addClass("active");
+          $("#btn-2").removeClass("active");
+          $("#signin").removeClass("display-none");
+          $("#signup").addClass("display-none");
+        });
+      });
+    </script>
+  </body>
+</html>

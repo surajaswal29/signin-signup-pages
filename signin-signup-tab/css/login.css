@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.form-wrap{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:600px;
+    height:500px;
+    /* background: red; */
+    /* border: 1px solid #000; */
+}
+.btn-block{
+    background: rgb(221, 216, 216);
+    color: #000;
+    padding:8px 5px;
+    font-size: 20px;
+    border: none;
+}
+.btn-block:focus{
+    outline: none;
+}
+/* .btn-block:hover{
+    opacity: 0.5;
+    background-color: aqua;
+} */
+.active{
+    background: chocolate;
+    color: cornsilk;
+}
+.bt-login{
+    background:chocolate;
+    color:#fff;
+}
+.display-none{
+    display: none;
+}
